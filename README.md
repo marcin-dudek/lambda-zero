@@ -30,7 +30,7 @@ omf install marcin-dudek/lambda-zero
 ## Screenshot
 
 <p align="center">
-<img src="{{SCREENSHOT_URL}}" alt="screenshot to be done">
+<img src="./screenshot.png" alt="screenshot to be done">
 </p>
 
 
