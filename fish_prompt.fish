@@ -27,7 +27,7 @@ function fish_prompt
 
   ## Line 1
   echo -n $hostcolor''$orange$current_user$white' · '$limegreen(pwd|sed "s=$HOME=~=")$turquoise
-  __fish_git_prompt " · (%s)"
+  __fish_git_prompt " · %s"
   echo
 
   ## Line 2
