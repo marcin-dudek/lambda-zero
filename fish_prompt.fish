@@ -20,18 +20,16 @@ function fish_prompt
   set -g __fish_git_prompt_showuntrackedfiles true
   set -g __fish_git_prompt_showstashstate true
   set -g __fish_git_prompt_show_informative_status true
+  set -g __fish_prompt_char 'λ'
 
 
   set -l current_user (whoami)
 
   ## Line 1
   echo -n $hostcolor''$orange$current_user$white' · '$limegreen(pwd|sed "s=$HOME=~=")$turquoise
-  __fish_git_prompt " (%s)"
+  __fish_git_prompt " · (%s)"
   echo
 
   ## Line 2
-  echo -n $hostcolor'λ '
-
-  ## Rest of the prompt
-  echo -n $hostcolor'─'$white$__fish_prompt_char $normal
+  echo -n $limegreen$__fish_prompt_char' '$normal
 end
